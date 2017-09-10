@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>search engine</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+    <script type="text/javascript" src="./js/jquery-ui.js"></script>
+    <link rel="stylesheet" href="./css/jquery-ui.min.css">
+</head>
+
+<body background="./images/bg.jpg">
+    <div id="top">
+        <img id="topImage" src="./images/left.png" alt="top">
+    </div>
+    <div id="logo">
+        <div id="tt"></div>
+        <img id="logoImage" src="./images/center.png" alt="logo">
+    </div>
+    <div id="whole">
+        <div id="search">
+            <button id="show" class="ad">advanced search</button>
+            <form action="" id="mainSearch">
+                <input id="write" type="text">
+                <input id="doSearch" type="button" value="search" backgroundImage:url( '../src/images/search.png')>
+            </form>
+        </div>
+        <div id="better">
+            <form id="advanced" action=""></form>
+            <div class="list">
+                <span id="spanAMJC">案件名&nbsp;&nbsp;&nbsp;</span>
+                <input class="ad" type="input" name="case_name"></div>
+            <div class="list">
+                <span id="spanAJH">案件号&nbsp;&nbsp;&nbsp;</span>
+                <input class="ad" type="input" name="case_number"></div>
+            <div class="list">
+                <span id="spanFYM">法院名&nbsp;&nbsp;&nbsp;</span>
+                <input class="ad" type="input" name="name_of_court"></div>
+            <div class="list">
+                <span id="spanFYJB">法院级别</span>
+                <input class="ad" type="input" name="level_of_court"></div>
+            <div class="list">
+                <span id="spanAJLX">案件类型</span>
+                <input class="ad" type="input" name="type_of_case"></div>
+            <div class="list">
+                <span id="spanWSLX">文书类型</span>
+                <input class="ad" type="input" name="type_of_doc"></div>
+            <div class="list">
+                <span id="spanJPSH">决判时间</span>
+                <input class="ad" type="input" name="caipan_from/to_year/month/day" id="JPtimeFrom"></div>
+            <div class="list">
+                <span id="spanSPLX">审判类型</span>
+                <input class="ad" type="input" name="judgement"></div>
+            <div class="list">
+                <span id="spanFLM">法律名&nbsp;&nbsp;&nbsp;</span>
+                <input class="ad" type="input" name="name_of_law"></div>
+            <div class="list">
+                <span id="spanFLTH">法律条号</span>
+                <input class="ad" type="input" name="name_of_tiao"></div>
+            <div class="list">
+                <span id="spanFLKH">法律款号</span>
+                <input class="ad" type="input" name="name_of_kuan"></div>
+            <div class="list">
+                <span id="spanWSFBSJ">文书时间</span>
+                <input class="ad" type="input" name="fabu_from/to_year/month/day" id="FBtimeFrom"></div>
+            <input class="ad" type="button" value="inqure">
+            <button id="reset" class="ad" value="reset" onclick="reset()">reset</button>
+        </div>
+    </div>
+    <div id="resultList"></div>
+    <div id="buttons"></div>
+</body>
+
+<footer>
+
+</footer>
+
+</html>

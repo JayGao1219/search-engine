@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0, auto;
+    border: 0;
+    text-align: center;
+    position: relative;
+}
+
+body {
+    background-size: cover;
+}
+
+#show {
+    float: left;
+}
+
+#mainSearch {
+    float: left;
+    padding: 2px;
+}
+
+#partOne {
+    display: block;
+}
+
+#search {
+    height: 50px;
+    border-style: bold;
+    border-width: 5px;
+    border-color: black;
+}
+
+#whole {
+    height: 70px;
+    width: 600px;
+    position: relative;
+    margin: auto;
+}
+
+#better {
+    float: left;
+    display: none;
+    width: 400px;
+    border-style: bold;
+    height: 220px;
+    z-index: 999;
+}
+
+.list {
+    float: left;
+}
+
+.list span {
+    width: 64px;
+    height: 22px;
+}
+
+#resultList {
+    z-index: 0;
+    width: 600px;
+    position: relative;
+    margin: auto;
+}
+
+#top {
+    height: 50px;
+}
+
+#logo {
+    height: 250px;
+}
+
+#show {
+    height: 45px;
+    width: 90px;
+    padding: 5px;
+}
+
+#write {
+    width: 400px;
+    height: 40px;
+    border-style: bold;
+}
+
+#doSearch {
+    height: 50px;
+    width: 90px;
+}
+
+#topImage {
+    float: left;
+    height: 50px;
+}
+
+#logoImage {
+    margin: auto;
+    position: relative;
+    height: 150px;
+    float: bottom;
+}
+
+#buttons {
+    width: 600px;
+    position: relative;
+    margin: auto;
+}
+
+#tt {
+    height: 90px;
+}
+
+.ad {
+    width: 110px;
+}
