@@ -8,6 +8,7 @@
 
 body {
     background-size: cover;
+    z-index: 1;
 }
 
 #show {
@@ -16,7 +17,7 @@ body {
 
 #mainSearch {
     float: left;
-    padding: 2px;
+    background-color: white;
 }
 
 #partOne {
@@ -39,11 +40,13 @@ body {
 
 #better {
     float: left;
+    color: #4a4a4a;
+    font-weight: bold;
     display: none;
-    width: 400px;
+    width: 380px;
     border-style: bold;
-    height: 220px;
-    z-index: 999;
+    height: 180px;
+    background-color: #e4f0fc;
 }
 
 .list {
@@ -71,32 +74,38 @@ body {
 }
 
 #show {
-    height: 45px;
-    width: 90px;
+    height: 42px;
+    width: 70px;
     padding: 5px;
+    font-weight: bold;
+    color: #4a4a4a;
+    background-color: white;
 }
 
 #write {
-    width: 400px;
+    width: 450px;
     height: 40px;
     border-style: bold;
 }
 
 #doSearch {
-    height: 50px;
-    width: 90px;
+    height: 42px;
+    width: 42px;
+    border: solid transparent;
+    background: transparent no-repeat;
+    background-image: url("../images/s.png");
 }
 
 #topImage {
     float: left;
-    height: 50px;
+    height: 40px;
 }
 
 #logoImage {
     margin: auto;
     position: relative;
-    height: 150px;
-    float: bottom;
+
+    width: 350px;
 }
 
 #buttons {
@@ -106,9 +115,11 @@ body {
 }
 
 #tt {
-    height: 90px;
+    height: 180px;
 }
 
 .ad {
     width: 110px;
+    color: #4a4a4a;
+    font-weight: bold;
 }
