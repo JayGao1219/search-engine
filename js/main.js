@@ -1,8 +1,8 @@
 $(function() {
 	$("#JPtimeFrom").datepicker();
-});
-$(function() {
 	$("#FBtimeFrom").datepicker();
+	$("#JPtimeTo").datepicker();
+	$("#FBtimeTo").datepicker();
 });
 var advancedClick = 0;
 $(function() {
@@ -69,6 +69,7 @@ function test() {
 		l = l / 10;
 	$('#logo').hide();
 	div = $('#resultList');
+	div.show();
 	changeTo(1);
 	var buttons = $('#buttons');
 	for (let i = 0; i < l - 1; ++i) {
@@ -86,6 +87,9 @@ function test() {
 
 		})();
 		bb.css('float', 'left');
+		bb.css('backgroundColor', 'white');
+		bb.css('font-weight', 'bold');
+		bb.css('color', '#4a4a4a');
 	}
 }
 
