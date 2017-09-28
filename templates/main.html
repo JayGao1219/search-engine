@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>search engine</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='ss.css') }}">
+    <script type="text/javascript" src="{{ url_for('static',filename='jquery.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='a.js') }}"></script>
+</head>
+
+<body background="{{ url_for('static',filename='bb.jpg') }}">
+    <div id="top">
+        <img id="topImage" src="{{ url_for('static',filename='left.png') }}" alt="top">
+    </div>
+    <div id="logo">
+        <div id="tt"></div>
+        <img id="logoImage" src="{{ url_for('static',filename='center.png') }}" alt="logo">
+    </div>
+    <div id="whole">
+        <div id="search">
+            <form method="POST">
+                {{ form.hidden_tag() }} 
+                {{ form.name.label }} 
+                {{form.name()}}
+                 </br>
+                 国籍
+                {{form.nation()}}
+                </br>
+                职业
+                {{form.occpupation()}}
+                {{ form.submit() }} 
+            </form>
+        </div>
+    </div>
+</body>
+<footer>
+</footer>
+</html>

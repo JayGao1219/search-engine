@@ -9,7 +9,7 @@ body {
     background-size: cover;
     z-index: 1;
     background-attachment: fixed;
-    /*background: no-repeat;*/
+    background-image:{{url_for('satic',filename='bg.jpg')}};
 }
 
 #show {
@@ -47,8 +47,9 @@ body {
     width: 390px;
     border-style: bold;
     height: 180px;
-    background-color: #e4f0fc;
+    background-color: white;
     z-index: 10;
+    text-align: center;
 }
 
 .list {
@@ -62,13 +63,13 @@ body {
 
 #resultList {
     display: none;
-    text-align: center;
     z-index: 3;
     padding: 5px;
     width: 600px;
     position: relative;
     margin: auto;
-    background-image: url("../images/bg1.jpg");
+
+    opacity: 0.5;
 }
 
 #top {
@@ -89,11 +90,6 @@ body {
     background-color: white;
 }
 
-#aa {
-
-    text-align: center;
-}
-
 #write {
     width: 450px;
     height: 40px;
@@ -105,7 +101,7 @@ body {
     width: 42px;
     border: solid transparent;
     background: transparent no-repeat;
-    background-image: url("../images/s.png");
+    background-image: {{url_for('static',filename='s.png')}};
 }
 
 #topImage {
@@ -117,7 +113,6 @@ body {
     margin: auto;
     position: relative;
 
-    text-align: center;
     width: 350px;
 }
 
@@ -137,17 +132,10 @@ body {
     font-weight: bold;
 }
 
-#FBtimeTo,
-#FBtimeFrom,
-#JPtimeFrom,
-#JPtimeTo {
-    width: 43px;
-    padding: 0px;
-}
 
 #in,
 #reset {
     width: 50px;
     background-color: #3a8fe4;
-    text-align: center;
 }
+

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>search-list</title>
+    <script type="text/javascript" src="{{ url_for('static',filename='jquery.min.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static',filename='test.js') }}"></script>
+    </head>
+
+<body>
+    <div id='whole'>
+        {%for item in list %}
+        <div class='list'>
+        <p>{{item.name}}</p>
+        <a href={{ '/show/'+loop.index|string}}>find more about the person</a> {%endfor%}
+        <div id="toHide">
+            {%for aa in query%}
+            <p class='hhh'>{{aa}}</p>
+            {%endfor%}
+        </div>
+    </div>
+    </div>
+    <div id="buttons"></div>
+</body>
+
+</html>
